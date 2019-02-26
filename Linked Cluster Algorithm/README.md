@@ -1,4 +1,4 @@
-#LINKED CLUSTER ALGORITHM
+# Linked Cluster Algorithm
 
 The linked cluster algorithm is implemented in small sensor networks to form clusters. It performs the selection by means of the unique identifier (ID) of the sensor, defining the neighbor of lower ID as a Cluster Head (CH).
 This algorithm was implemented in the nesC programming language.
