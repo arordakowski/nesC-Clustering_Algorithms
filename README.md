@@ -1,2 +1,3 @@
-# nesC-Clustering_Algorithms
-Clustering algorithms in nesC
+# Clustering Algorithms
+
+Clustering algorithms in nesC.
