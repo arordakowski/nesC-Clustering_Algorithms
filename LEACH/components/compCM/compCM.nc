@@ -1,0 +1,4 @@
+
+interface compCM {
+	command JoinCluster();
+}
