@@ -1,6 +1,6 @@
 
 module CH_ElectionC {
-  provides interface Sensor;
+  provides interface CH_Election;
 }
 
 implementation {
