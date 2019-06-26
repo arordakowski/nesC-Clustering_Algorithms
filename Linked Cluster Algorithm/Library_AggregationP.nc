@@ -1,11 +1,11 @@
 
-module libraryP
+module Library_AggregationP
 {
-  provides interface library;
+  provides interface Library_Aggregation;
 }
 implementation
 {
-  command int library.MIN(uint16_t neighbors[]){
+  command int Library_Aggregation.MIN(uint16_t neighbors[]){
 
 		uint16_t aux;
 		uint16_t i;		
