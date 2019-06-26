@@ -19,7 +19,7 @@ module LcaC @safe(){
 	interface Timer<TMilli> as Timer0;
 
 	//LIBRARY
-	interface library;
+	interface Library_Aggregation;
 
 	}
 }
@@ -58,7 +58,7 @@ implementation {
 //----------------- implementation of events ------------------
 
 	void state_Select_CH(){
-		if((call library.MIN(neighbors))==TOS_NODE_ID){
+		if((call Library_Aggregation.MIN(neighbors))==TOS_NODE_ID){
 			sendMsg(2);
 			CH = TOS_NODE_ID;
 			nextState = 3;
