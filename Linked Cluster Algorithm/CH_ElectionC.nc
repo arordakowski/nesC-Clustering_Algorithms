@@ -15,7 +15,7 @@ implementation {
 
 	message_t pkt;
 
-	command CH_Election.selectCH(uint16_t neighbors[]){
+	command CH_Election.selectCH(uint16_t neighbors[][]){
 		
 		uint16_t minNeighbors = call compLib.MIN(neighbors);
 	
