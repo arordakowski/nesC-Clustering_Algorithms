@@ -17,17 +17,17 @@ module LcaC @safe(){
 		//TIMMER
 		interface Timer<TMilli> as Timer0;
 
-		//LIBRARY_AGGREGGATION
-		interface Library_Agreggation;
-
 		//SENSOR
-		interface Sensor;
+		interface Sensor as compSensor;
 
 		//CH_ELECTION
-		interface CH_Election;
+		interface CH_Election as compCH;
 
 		//CLUSTER_FORMATION
-		interface Cluster_Formation;
+		interface Cluster_Formation as compCM;
+		
+		//LIBMESSAGE
+		interface ComponentsLibMessage as compLibMSG;
 	}
 }
 implementation {
