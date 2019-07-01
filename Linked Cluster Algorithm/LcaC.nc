@@ -76,7 +76,8 @@ implementation {
       			CH_ANNOUNCE* btrpkt = (CH_ANNOUNCE*)payload;	
 			if (currentState == 3){			//verificação do STATE atual
 				RSS = compSensor->getRSS(btrpkt->sensorId);
-				knownCHs_insert(btrpkt->sensorId, RSS);
+				knownCHs[btrpkt->sensorId][0] = btrpkt->sensorId;
+				knownCHs[btrpkt->sensorId][1] = RSS;
 			}
     		} else if (len == sizeof(ACK_CH_ANNOUNCE)) {		//verificando o tipo da mensagem
 			if(currentState == 6){
