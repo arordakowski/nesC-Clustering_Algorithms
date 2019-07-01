@@ -39,7 +39,7 @@ implementation {
 	uint16_t myCH;
 	uint16_t myID = TOS_NODE_ID;
 	
-	double knownCHs[15][3];	
+	double knownCHs[15][2];	
 		
 	message_t pkt;
 	uint16_t currentState; 			
